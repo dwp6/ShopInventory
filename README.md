@@ -1,6 +1,5 @@
 # SHOP INVENTORY MANAGEMENT SYSTEM
 
-
 Writing an end 2 end solution for the application to test the end points for each scenarion on the acceptance criteria.
 
 ## Description
@@ -25,14 +24,23 @@ I have also used google java format style to keep high standards
 ### Installing
 
 * git clone git@github.com:dwp6/ShopInventory.git
-* Run from - mvn clean
-* mvn test - run all the test from command line
 * mvn install - Installs all dependencies needed
+* mvn clean - cleans the maven project
+
+### Very useful Maven commands
+
+* mvn package - builds the project and Jars
+* mvn test - run all the test from command line 
+* mvn verify - this is used everytime before pushing changes to make sure the project builds with no errors
+* mvn -help - prints all the commands to help
+
 
 ### Reporting
+
 To view reporting - click on target, right click on cucumber-report.html, hover at open in and browser, select the browser.
 
 ### CICD
+
 These test cases can be executed on a CI/CD pipeline by:
 1. creating a docker image.
 2. createing .gitlab-ci.yml file
@@ -45,6 +53,7 @@ These test cases can be executed on a CI/CD pipeline by:
 
 
 ## Branch control
+
 Branch name to have the same standard
 For UI changes branch should be: feat/add-find-job-title-ui-test
 For API changes branch should be: feat/add-find-job-title-api-test
