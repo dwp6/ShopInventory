@@ -1,0 +1,28 @@
+variables:
+  REPO_NAME: "WIP"
+  SERVICE_NAME: "SHOP INVENTORY MANAGEMENT SYSTEM"
+
+include:
+  - project: project/pipeline/path/to/docker/here
+    file: cicd-doc.yml
+
+# WIP Link Docker with cicd
+API-test:
+  variables:
+    DOCKER_COMPOSE: "docker compose -f docker-compose-ci.yml up -d triggernamehere"
+    DOCKER_COMPOSE_COMMAND: "--exit-code-from shop-inventory-api-test shop-inventory-api-test"
+  artifacts:
+    when: always
+    paths:
+      - project path here
+    reports:
+
+# Work in Progress
+
+        - shop/inventory/path/to/reports/TEST-*.xml
+
+# WIP Load test configuration
+api-load-test:
+  variables:
+    DOCKER_COMPOSE_PRE: "docker compose -f docker-compose-ci.yml up -d shop-inventory-management-system"
+    DOCKER_COMPOSE_COMMAND: " WIP-Same-as-above"

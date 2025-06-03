@@ -41,6 +41,7 @@ To view reporting - click on target, right click on cucumber-report.html, hover 
 
 ### CICD
 
+This is WIP, files have been created but not fully configured to run.
 These test cases can be executed on a CI/CD pipeline by:
 1. creating a docker image.
 2. createing .gitlab-ci.yml file
