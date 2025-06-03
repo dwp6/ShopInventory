@@ -1,0 +1,6 @@
+#WIP docker file
+
+FROM ubuntu:latest
+LABEL authors="eniskraja"
+
+ENTRYPOINT ["top", "-b"]
