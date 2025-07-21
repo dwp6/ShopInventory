@@ -39,13 +39,6 @@ I have also used google java format style to keep high standards
 
 To view reporting - click on target, right click on cucumber-report.html, hover at open in and browser, select the browser.
 
-### CICD
-
-This is WIP, files have been created but not fully configured to run.
-These test cases can be executed on a CI/CD pipeline by:
-1. creating a docker image.
-2. createing .gitlab-ci.yml file
-3. To do that we need to follow the steps which include creating a yamel file  
 
 ### Executing program
 
